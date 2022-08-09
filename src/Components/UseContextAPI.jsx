@@ -1,13 +1,13 @@
-import React, { createContext } from 'react';
+import React from 'react';
+import { useContext } from 'react';
 import Child1 from './Child1';
-
-export const Fname = createContext();
-export const Lname = createContext();
-export const Msg = createContext("MESSAGE TO THE WORLD");
+import { Fname, Lname } from './Contexts/AllContexts';
 
 function UseContextAPI() {
+    const fname = useContext(Fname);
     return (
         <div>
+            <h1> Fname using { }: {fname}</h1>
             <Fname.Provider value='Prashant'>
                 <Lname.Provider value='Laxmeshwarmath'>
                     <Child1 />

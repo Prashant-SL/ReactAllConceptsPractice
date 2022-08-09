@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fname, Lname } from './UseContextAPI';
+import { Fname, Lname } from './Contexts/AllContexts';
 
 function Child2() {
     return (
