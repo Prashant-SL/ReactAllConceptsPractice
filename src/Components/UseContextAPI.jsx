@@ -7,7 +7,7 @@ export const Msg = createContext("MESSAGE TO THE WORLD");
 
 function UseContextAPI() {
     return (
-        <div>UseContextAPI
+        <div>
             <Fname.Provider value='Prashant'>
                 <Lname.Provider value='Laxmeshwarmath'>
                     <Child1 />

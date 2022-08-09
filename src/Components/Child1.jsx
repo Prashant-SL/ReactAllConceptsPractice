@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
 import Child2 from './Child2';
+import Subchild from './Subchild';
 import { Msg } from './UseContextAPI';
 
 function Child1() {
 
     const msg = useContext(Msg)
     return (
-        <div>
-            {msg}
+        <>
             <Child2 />
-        </div>
+            <Subchild />
+        </>
     )
 }
 
-export default Child1
+export default Child1;
